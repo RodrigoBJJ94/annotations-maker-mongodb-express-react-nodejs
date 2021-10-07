@@ -3,6 +3,9 @@ import api from './services/api';
 import './App.css';
 import Notes from './components/Notes/Notes';
 import RadioButton from './components/RadioButton/RadioButton';
+import Title from './components/Title/Title';
+import AnnotationsTitle from './components/AnnotationsTitle/AnnotationsTitle';
+import Annotations from './components/Annotations/Annotations';
 
 export default function App() {
   const [title, setTitle] = useState('');
@@ -93,17 +96,10 @@ export default function App() {
   return (
     <div id="app">
       <aside>
-        <strong>Notepad</strong>
+        <Title />
         <form onSubmit={handleSubmit}>
-          <div className="input-block">
-            <label htmlFor="title">Annotation Title </label>
-            <input required maxLength="30" value={title} onChange={event => setTitle(event.target.value)} />
-          </div>
-          <div className="input-block">
-            <label htmlFor="note">Annotations </label>
-            <textarea required value={notes} onChange={event => setNotes(event.target.value)}  ></textarea>
-            <button id="button-submit" type="submit">Save</button>
-          </div>
+          <AnnotationsTitle title={title} setTitle={setTitle} />
+          <Annotations notes={notes} setNotes={setNotes} />
         </form>
         <RadioButton selectedValue={selectedValue} handleChange={handleChange} />
       </aside>

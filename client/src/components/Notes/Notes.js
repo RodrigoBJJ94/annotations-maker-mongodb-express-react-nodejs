@@ -36,7 +36,12 @@ export default function Notes({ data, handleDelete, handleChangePriority }) {
                         <AiTwotoneDelete size="20" onClick={() => handleDelete(data._id)} />
                     </div>
                 </div>
-                <textarea defaultValue={data.notes} onChange={e => setChangedNote(e.target.value)} onBlur={e => handleSave(e.target, data.notes)} onClick={e => handleEdit(e.target, data.priority)}></textarea>
+                <textarea
+                    defaultValue={data.notes}
+                    onChange={e => setChangedNote(e.target.value)}
+                    onBlur={e => handleSave(e.target, data.notes)}
+                    onClick={e => handleEdit(e.target, data.priority)}
+                ></textarea>
                 <span>
                     <AiOutlineExclamationCircle size="20" onClick={() => handleChangePriority(data._id)} />
                 </span>
