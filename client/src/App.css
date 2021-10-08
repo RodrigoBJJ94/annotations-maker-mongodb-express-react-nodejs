@@ -85,7 +85,7 @@ aside form {
   width: 100%;
   border: 0;
   margin-top: 30px;
-  background-color: #ffd3ca;
+  background-color: rgb(65, 87, 95);
   border-radius: 10px;
   padding: 15px 20px;
   font-size: 16px;
@@ -125,11 +125,11 @@ ul {
 }
 
 .notepad-infos div div {
-  color: #ffd3ca;
+  color: rgb(65, 87, 95);
 }
 
 .notepad-infos div div:hover {
-  color: #eb8f7a;
+  color: rgb(14, 30, 37);
   transition: 0.2s;
 }
 
@@ -156,12 +156,12 @@ ul {
 }
 
 .notepad-infos span:hover {
-  color: #eb8f7a;
+  color: rgb(14, 30, 37);
   transition: 0.2s;
 }
 
 .notepad-infos-priority {
-  background: #eb8f7a;
+  background: rgb(14, 30, 37);
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px 20px 10px 20px;
@@ -179,7 +179,7 @@ ul {
 }
 
 .notepad-infos-priority div div {
-  color: #fabbad;
+  color: rgb(65, 87, 95);
 }
 
 .notepad-infos-priority div div:hover {
@@ -196,7 +196,7 @@ ul {
   font-size: 14px;
   color: #fff;
   border: 0;
-  background-color: #eb8f7a;
+  background-color: rgb(14, 30, 37);
   resize: none;
 }
 
@@ -205,7 +205,7 @@ ul {
 }
 
 .notepad-infos-priority span {
-  color: #fabbad;
+  color: rgb(65, 87, 95);
   cursor: pointer;
 }
 
@@ -228,6 +228,7 @@ ul {
   #app {
     flex-direction: column;
     align-items: unset;
+    padding: 15px 10px;
   }
 
   main {
@@ -237,16 +238,120 @@ ul {
 
   aside {
     position: relative;
-    width: 100%;
+    align-self: center;
+    width: 320px;
+    margin-bottom: -10px;
+    padding: 15px 15px;
+  }
+
+  aside form {
+    margin-top: 15px;
   }
   
+  .input-block {
+    margin-top: 10px;
+  }
+
+  .input-block input {
+    height: 28px;
+    font-size: 13px;
+  }
+  
+  .input-block textarea {
+    margin-top: 5px;
+    height: 80px;
+    font-size: 13px;
+  }
+  
+  .input-block button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .radio-options {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
+  .notepad-infos {
+    padding: 12px 10px 12px 10px;
+  }
+
+  .notepad-infos-priority {
+    padding: 12px 10px 12px 10px;
+  }
+
   ul {
-    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
+
 @media (max-width: 320px) {
+  #app {
+    flex-direction: column;
+    align-items: unset;
+    padding: 8px 8px;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 17px;
+  }
+
+  aside {
+    position: relative;
+    align-self: center;
+    width: 290px;
+    margin-bottom: -10px;
+    padding: 12px 12px;
+  }
+
+  aside form {
+    margin-top: 12px;
+  }
+  
+  .input-block {
+    margin-top: 8px;
+  }
+
+  .input-block input {
+    height: 24px;
+    font-size: 12px;
+  }
+  
+  .input-block textarea {
+    margin-top: 4px;
+    height: 65px;
+    font-size: 12px;
+  }
+  
+  .input-block button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .radio-options {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-bottom: -12px;
+  }
+
+  .notepad-infos {
+    padding: 12px 10px 12px 10px;
+  }
+
+  .notepad-infos-priority {
+    padding: 12px 10px 12px 10px;
+  }
+
   ul {
-    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  aside strong {
+    font-size: 17px;
   }
 }

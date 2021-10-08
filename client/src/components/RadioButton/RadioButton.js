@@ -5,7 +5,7 @@ import Radio from '@mui/material/Radio';
 export default function RadioButton({ selectedValue, handleChange }) {
     const CustomRadio = withStyles({
         root: {
-            color: '#ffd3ca', '&.Mui-checked': { color: '#eb8f7a' },
+            color: 'rgb(65, 87, 95)', '&.Mui-checked': { color: 'rgb(14, 30, 37)' },
         },
         checked: {},
     })((props) => <Radio color="default" {...props} />);
@@ -15,9 +15,9 @@ export default function RadioButton({ selectedValue, handleChange }) {
             <div>
                 <CustomRadio {...CustomRadio}
                     sx={{
-                        color: '#ffd3ca',
+                        color: 'rgb(65, 87, 95)',
                         '&.Mui-checked': {
-                            color: '#eb8f7a',
+                            color: 'rgb(14, 30, 37)',
                         },
                     }}
                     checked={selectedValue === 'all'}
@@ -29,9 +29,9 @@ export default function RadioButton({ selectedValue, handleChange }) {
             <div>
                 <CustomRadio {...CustomRadio}
                     sx={{
-                        color: '#ffd3ca',
+                        color: 'rgb(65, 87, 95)',
                         '&.Mui-checked': {
-                            color: '#eb8f7a',
+                            color: 'rgb(14, 30, 37)',
                         },
                     }}
                     checked={selectedValue === 'true'}
@@ -43,9 +43,9 @@ export default function RadioButton({ selectedValue, handleChange }) {
             <div>
                 <CustomRadio {...CustomRadio}
                     sx={{
-                        color: '#ffd3ca',
+                        color: 'rgb(65, 87, 95)',
                         '&.Mui-checked': {
-                            color: '#eb8f7a',
+                            color: 'rgb(14, 30, 37)',
                         },
                     }}
                     checked={selectedValue === 'false'}

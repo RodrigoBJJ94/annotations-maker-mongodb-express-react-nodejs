@@ -20,10 +20,10 @@ export default function App() {
   useEffect(() => {
     function enableSubmitButton() {
       let button = document.getElementById('button-submit');
-      button.style.backgroundColor = '#ffd3ca';
+      button.style.backgroundColor = 'rgb(65, 87, 95)';
 
       if (title && notes) {
-        button.style.backgroundColor = '#eb8f7a';
+        button.style.backgroundColor = 'rgb(14, 30, 37)';
       };
     }
     enableSubmitButton();
