@@ -1,4 +1,5 @@
 import React from 'react';
+import './Annotations.css';
 
 export default function AnnotationsTitle(props) {
     return (

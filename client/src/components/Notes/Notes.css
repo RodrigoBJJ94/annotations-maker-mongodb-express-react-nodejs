@@ -1,0 +1,128 @@
+.notepad-infos {
+  background: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 20px 10px 20px;
+}
+
+.notepad-infos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notepad-infos strong {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+.notepad-infos div div {
+  color: rgb(65, 87, 95);
+}
+
+.notepad-infos div div:hover {
+  color: rgb(14, 30, 37);
+  transition: 0.2s;
+}
+
+.notepad-infos textarea {
+  padding: 7px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 130px;
+  font-size: 14px;
+  color: #666;
+  border: 0;
+  background-color: #fff;
+  resize: none;
+}
+
+.notepad-infos textarea:hover {
+  cursor: default;
+}
+
+.notepad-infos span {
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+.notepad-infos span:hover {
+  color: rgb(14, 30, 37);
+  transition: 0.2s;
+}
+
+.notepad-infos-priority {
+  background: rgb(14, 30, 37);
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 20px 10px 20px;
+}
+
+.notepad-infos-priority div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notepad-infos-priority strong {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.notepad-infos-priority div div {
+  color: rgb(65, 87, 95);
+}
+
+.notepad-infos-priority div div:hover {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.notepad-infos-priority textarea {
+  padding: 7px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 130px;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  background-color: rgb(14, 30, 37);
+  resize: none;
+}
+
+.notepad-infos-priority textarea:hover {
+  cursor: default;
+}
+
+.notepad-infos-priority span {
+  color: rgb(65, 87, 95);
+  cursor: pointer;
+}
+
+.notepad-infos-priority span:hover {
+  color: #fff;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .notepad-infos {
+    padding: 12px 10px 12px 10px;
+  }
+
+  .notepad-infos-priority {
+    padding: 12px 10px 12px 10px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .notepad-infos {
+    padding: 12px 10px 12px 10px;
+  }
+
+  .notepad-infos-priority {
+    padding: 12px 10px 12px 10px;
+  }
+}

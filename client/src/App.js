@@ -4,7 +4,7 @@ import './App.css';
 import Notes from './components/Notes/Notes';
 import RadioButton from './components/RadioButton/RadioButton';
 import Title from './components/Title/Title';
-import AnnotationsTitle from './components/AnnotationsTitle/AnnotationsTitle';
+import AnnotationsTitle from './components/Annotations/AnnotationsTitle';
 import Annotations from './components/Annotations/Annotations';
 
 export default function App() {
