@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from './services/api';
-import './App.css';
+import './Styles.css';
 import Notes from './components/Notes/Notes';
 import RadioButton from './components/RadioButton/RadioButton';
 import Title from './components/Title/Title';

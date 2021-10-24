@@ -1,0 +1,12 @@
+aside strong {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #333;
+}
+
+@media (max-width: 320px) {
+    aside strong {
+        font-size: 17px;
+    }
+}

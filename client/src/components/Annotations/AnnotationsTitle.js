@@ -1,5 +1,5 @@
 import React from 'react';
-import './Annotations.css';
+import './Styles.css';
 
 export default function AnnotationsTitle(props) {
     return (

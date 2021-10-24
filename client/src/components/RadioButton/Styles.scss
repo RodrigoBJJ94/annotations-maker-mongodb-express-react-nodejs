@@ -1,0 +1,24 @@
+.radio-options {
+    color: #acacac;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .radio-options {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .radio-options {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: -12px;
+    }
+}

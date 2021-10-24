@@ -1,0 +1,98 @@
+$primary-color: #fff;
+$secondary-color: #eee;
+$tertiary-color: #666;
+$width: 100%;
+$weight: bold;
+
+@mixin width-and-border {
+  width: 100%;
+  border: 0;
+}
+
+.input-block {
+  margin-top: 20px;
+
+  label {
+    font-weight: $weight;
+    color: #acacac;
+    font-size: 14px;   
+    display: block;
+  }
+
+  input {
+    @include width-and-border();
+    border-bottom: 1px solid $secondary-color;
+    color: $tertiary-color;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  textarea {
+    @include width-and-border();
+    background-color: $primary-color;
+    border-bottom: 1px solid $secondary-color;
+    color: $tertiary-color;
+    margin-top: 7px;
+    height: 200px;
+    font-size: 14px; 
+    resize: none;
+  }
+
+  button {
+    @include width-and-border();
+    color: $primary-color;
+    font-weight: $weight;
+    margin-top: 30px;
+    background-color: rgb(65, 87, 95);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 16px;    
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-block {
+    margin-top: 10px;
+
+    input {
+      height: 28px;
+      font-size: 13px;
+    }
+
+    textarea {
+      margin-top: 5px;
+      height: 80px;
+      font-size: 13px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .input-block {
+    margin-top: 8px;
+
+    input {
+      height: 24px;
+      font-size: 12px;
+    }
+
+    textarea {
+      margin-top: 4px;
+      height: 65px;
+      font-size: 12px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+  }
+}

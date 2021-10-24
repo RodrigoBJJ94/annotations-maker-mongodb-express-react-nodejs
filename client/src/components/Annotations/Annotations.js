@@ -1,5 +1,5 @@
 import React from 'react';
-import './Annotations.css';
+import './Styles.css';
 
 export default function Annotations(props) {
     return (
@@ -8,8 +8,8 @@ export default function Annotations(props) {
             <textarea
                 required
                 value={props.notes}
-                onChange={event => props.setNotes(event.target.value)}
-            ></textarea>
+                onChange={event => props.setNotes(event.target.value)}>
+            </textarea>
             <button id="button-submit" type="submit">Save</button>
         </div>
     );

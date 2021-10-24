@@ -1,0 +1,135 @@
+$primary-color: #fff;
+$secondary-color: rgb(65, 87, 95);
+$priority-color: rgb(14, 30, 37);
+$primary-cursor: default;
+$secondary-cursor: pointer;
+$transition: 0.2s;
+
+@mixin notepad-infos {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+}
+
+@mixin div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin textarea {
+    padding: 7px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 130px;
+    font-size: 14px;
+    border: 0;
+    resize: none;
+}
+
+@mixin strong {
+    display: block;
+    font-size: 16px;
+}
+
+@mixin notepad-media {
+    padding: 12px 10px 12px 10px;
+}
+
+.notepad-infos {
+    background: $primary-color;
+    @include notepad-infos();
+
+    div {
+        @include div();
+
+        div {
+            color: $secondary-color;
+
+            &:hover {
+                color: $priority-color;
+                transition: $transition;
+            }
+        }
+    }
+
+    textarea {
+        @include textarea();
+        background-color: $primary-color;
+        color: #666;
+
+        &:hover {
+            cursor: $primary-cursor;
+        }
+    }
+
+    span {
+        color: #c4c4c4;
+        cursor: $secondary-cursor;
+
+        &:hover {
+            color: $priority-color;
+            transition: $transition;
+        }
+    }
+
+    strong {
+        @include strong();
+        color: #333;
+    }
+}
+
+.notepad-infos-priority {
+    background: $priority-color;
+    @include notepad-infos();
+
+    div {
+        @include div();
+
+        div {
+            color: $secondary-color;
+
+            &:hover {
+                color: $primary-color;
+                transition: $transition;
+            }
+        }
+    }
+
+    textarea {
+        @include textarea();
+        color: $primary-color;
+        background-color: $priority-color;
+
+        &:hover {
+            cursor: $primary-cursor;
+        }
+    }
+
+    span {
+        color: $secondary-color;
+        cursor: $secondary-cursor;
+
+        &:hover {
+            color: $primary-color;
+            transition: $transition;
+        }
+    }
+
+    strong {
+        @include strong();
+        color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    .notepad-infos, .notepad-infos-priority {
+        @include notepad-media();
+    }
+}
+
+@media (max-width: 320px) {
+    .notepad-infos, .notepad-infos-priority {
+        @include notepad-media();
+    }
+}

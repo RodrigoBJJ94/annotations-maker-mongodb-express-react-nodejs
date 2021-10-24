@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Notes.css';
+import './Styles.css';
 import { AiTwotoneDelete, AiOutlineExclamationCircle } from "react-icons/ai";
 import api from '../../services/api';
 
